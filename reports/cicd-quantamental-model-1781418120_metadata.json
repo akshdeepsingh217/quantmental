@@ -1,0 +1,38 @@
+{
+    "ModelName": "cicd-quantamental-model-1781418120",
+    "PrimaryContainer": {
+        "Image": "683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-xgboost:1.7-1",
+        "Mode": "SingleModel",
+        "ModelDataUrl": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/output/cicd-xgb-train-1781417969/output/model.tar.gz",
+        "ModelDataSource": {
+            "S3DataSource": {
+                "S3Uri": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/output/cicd-xgb-train-1781417969/output/model.tar.gz",
+                "S3DataType": "S3Object",
+                "CompressionType": "Gzip"
+            }
+        }
+    },
+    "ExecutionRoleArn": "arn:aws:iam::025891565789:role/LabRole",
+    "CreationTime": "2026-06-14 06:22:00.989000+00:00",
+    "ModelArn": "arn:aws:sagemaker:us-east-1:025891565789:model/cicd-quantamental-model-1781418120",
+    "EnableNetworkIsolation": false,
+    "DeploymentRecommendation": {
+        "RecommendationStatus": "FAILED"
+    },
+    "ResponseMetadata": {
+        "RequestId": "70a3fb9d-1cac-449b-a78f-ea47acb0fb5f",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "70a3fb9d-1cac-449b-a78f-ea47acb0fb5f",
+            "strict-transport-security": "max-age=47304000; includeSubDomains",
+            "x-frame-options": "DENY",
+            "content-security-policy": "frame-ancestors 'none'",
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "x-content-type-options": "nosniff",
+            "content-type": "application/x-amz-json-1.1",
+            "content-length": "815",
+            "date": "Sun, 14 Jun 2026 06:36:25 GMT"
+        },
+        "RetryAttempts": 0
+    }
+}

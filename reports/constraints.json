@@ -1,0 +1,53 @@
+{
+    "version": 0.0,
+    "features": [
+        {
+            "name": "Target_Fwd_Vol_5d",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": true
+            }
+        },
+        {
+            "name": "Log_Return",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": false
+            }
+        },
+        {
+            "name": "EMA_5",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": false
+            }
+        },
+        {
+            "name": "EMA_20",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": false
+            }
+        },
+        {
+            "name": "Hist_Vol_5d",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": true
+            }
+        },
+        {
+            "name": "News_Sentiment_Score",
+            "inferred_type": "Fractional",
+            "completeness": 1.0,
+            "num_constraints": {
+                "is_non_negative": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "version": 0.0,
+    "dataset": {
+        "item_count": 6752
+    },
+    "features": [
+        {
+            "name": "Target_Fwd_Vol_5d",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": 0.13929285781294565,
+                "sum": 940.505375953009,
+                "std_dev": 0.08088908628963024,
+                "min": 0.0004032530776003731,
+                "max": 0.27992106145080214
+            }
+        },
+        {
+            "name": "Log_Return",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": -0.00017056777179728794,
+                "sum": -1.1516735951752881,
+                "std_dev": 0.015092159228684716,
+                "min": -0.058796003774275137,
+                "max": 0.05297582781355726
+            }
+        },
+        {
+            "name": "EMA_5",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": 0.00027555732810874206,
+                "sum": 1.8605630793902264,
+                "std_dev": 0.010047992055866704,
+                "min": -0.036312002275401024,
+                "max": 0.04483084251025757
+            }
+        },
+        {
+            "name": "EMA_20",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": 5.045750035074982e-06,
+                "sum": 0.03406890423682628,
+                "std_dev": 0.002953064409294358,
+                "min": -0.011529125987721791,
+                "max": 0.011866993032420057
+            }
+        },
+        {
+            "name": "Hist_Vol_5d",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": 0.13975915869310818,
+                "sum": 943.6538394958664,
+                "std_dev": 0.0804335551200039,
+                "min": 0.00040154805453634305,
+                "max": 0.27994110835880165
+            }
+        },
+        {
+            "name": "News_Sentiment_Score",
+            "inferred_type": "Fractional",
+            "numerical_statistics": {
+                "common": {
+                    "num_present": 6752,
+                    "num_missing": 0
+                },
+                "mean": -0.0029009233056457523,
+                "sum": -19.58703415972012,
+                "std_dev": 0.5782234164172154,
+                "min": -0.9989665609566464,
+                "max": 0.9989443504412286
+            }
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+    "TrainingJobName": "cicd-xgb-train-1781417969",
+    "TrainingJobArn": "arn:aws:sagemaker:us-east-1:025891565789:training-job/cicd-xgb-train-1781417969",
+    "ModelArtifacts": {
+        "S3ModelArtifacts": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/output/cicd-xgb-train-1781417969/output/model.tar.gz"
+    },
+    "TrainingJobStatus": "Completed",
+    "SecondaryStatus": "Completed",
+    "HyperParameters": {
+        "eta": "0.1",
+        "max_depth": "5",
+        "num_round": "100",
+        "objective": "reg:squarederror",
+        "subsample": "0.8"
+    },
+    "AlgorithmSpecification": {
+        "TrainingImage": "683313688378.dkr.ecr.us-east-1.amazonaws.com/sagemaker-xgboost:1.7-1",
+        "TrainingInputMode": "File",
+        "MetricDefinitions": [
+            {
+                "Name": "train:mae",
+                "Regex": ".*\\[[0-9]+\\].*#011train-mae:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:gamma-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011train-gamma-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:mae",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-mae:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:logloss",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-logloss:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:cox-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011train-cox-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:f1",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-f1:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:cox-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-cox-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:accuracy",
+                "Regex": ".*\\[[0-9]+\\].*#011train-accuracy:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:mse",
+                "Regex": ".*\\[[0-9]+\\].*#011train-mse:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:poisson-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-poisson-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:error",
+                "Regex": ".*\\[[0-9]+\\].*#011train-error:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:ndcg",
+                "Regex": ".*\\[[0-9]+\\].*#011train-ndcg:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:map",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-map:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:gamma-deviance",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-gamma-deviance:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:error",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-error:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:poisson-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011train-poisson-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:rmse",
+                "Regex": ".*\\[[0-9]+\\].*#011train-rmse:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:logloss",
+                "Regex": ".*\\[[0-9]+\\].*#011train-logloss:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:accuracy",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-accuracy:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:rmse",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-rmse:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:gamma-deviance",
+                "Regex": ".*\\[[0-9]+\\].*#011train-gamma-deviance:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:mse",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-mse:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:ndcg",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-ndcg:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:f1",
+                "Regex": ".*\\[[0-9]+\\].*#011train-f1:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:r2",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-r2:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "train:map",
+                "Regex": ".*\\[[0-9]+\\].*#011train-map:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            },
+            {
+                "Name": "validation:gamma-nloglik",
+                "Regex": ".*\\[[0-9]+\\].*#011validation-gamma-nloglik:([-+]?[0-9]*\\.?[0-9]+(?:[eE][-+]?[0-9]+)?).*"
+            }
+        ],
+        "EnableSageMakerMetricsTimeSeries": false
+    },
+    "RoleArn": "arn:aws:iam::025891565789:role/LabRole",
+    "InputDataConfig": [
+        {
+            "ChannelName": "train",
+            "DataSource": {
+                "S3DataSource": {
+                    "S3DataType": "S3Prefix",
+                    "S3Uri": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/train/",
+                    "S3DataDistributionType": "FullyReplicated"
+                }
+            },
+            "ContentType": "text/csv",
+            "CompressionType": "None",
+            "RecordWrapperType": "None"
+        },
+        {
+            "ChannelName": "validation",
+            "DataSource": {
+                "S3DataSource": {
+                    "S3DataType": "S3Prefix",
+                    "S3Uri": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/validation/",
+                    "S3DataDistributionType": "FullyReplicated"
+                }
+            },
+            "ContentType": "text/csv",
+            "CompressionType": "None",
+            "RecordWrapperType": "None"
+        }
+    ],
+    "OutputDataConfig": {
+        "KmsKeyId": "",
+        "S3OutputPath": "s3://sagemaker-us-east-1-025891565789/quantamental-platform/xgboost-data/output",
+        "CompressionType": "GZIP"
+    },
+    "ResourceConfig": {
+        "InstanceType": "ml.m5.xlarge",
+        "InstanceCount": 1,
+        "VolumeSizeInGB": 5
+    },
+    "StoppingCondition": {
+        "MaxRuntimeInSeconds": 3600
+    },
+    "CreationTime": "2026-06-14 06:19:29.874000+00:00",
+    "TrainingStartTime": "2026-06-14 06:20:05.161000+00:00",
+    "TrainingEndTime": "2026-06-14 06:21:49.545000+00:00",
+    "LastModifiedTime": "2026-06-14 06:21:50.009000+00:00",
+    "SecondaryStatusTransitions": [
+        {
+            "Status": "Starting",
+            "StartTime": "2026-06-14 06:19:29.874000+00:00",
+            "EndTime": "2026-06-14 06:20:05.161000+00:00",
+            "StatusMessage": "Preparing the instances for training"
+        },
+        {
+            "Status": "Downloading",
+            "StartTime": "2026-06-14 06:20:05.161000+00:00",
+            "EndTime": "2026-06-14 06:21:21.411000+00:00",
+            "StatusMessage": "Downloading the training image"
+        },
+        {
+            "Status": "Training",
+            "StartTime": "2026-06-14 06:21:21.411000+00:00",
+            "EndTime": "2026-06-14 06:21:36.839000+00:00",
+            "StatusMessage": "Training image download completed. Training in progress."
+        },
+        {
+            "Status": "Uploading",
+            "StartTime": "2026-06-14 06:21:36.839000+00:00",
+            "EndTime": "2026-06-14 06:21:49.545000+00:00",
+            "StatusMessage": "Uploading generated training model"
+        },
+        {
+            "Status": "Completed",
+            "StartTime": "2026-06-14 06:21:49.545000+00:00",
+            "EndTime": "2026-06-14 06:21:49.545000+00:00",
+            "StatusMessage": "Training job completed"
+        }
+    ],
+    "FinalMetricDataList": [
+        {
+            "MetricName": "train:rmse",
+            "Value": 0.004809999838471413,
+            "Timestamp": "2026-06-14 06:21:28+00:00"
+        },
+        {
+            "MetricName": "validation:rmse",
+            "Value": 0.08315999805927277,
+            "Timestamp": "2026-06-14 06:21:28+00:00"
+        }
+    ],
+    "EnableNetworkIsolation": false,
+    "EnableInterContainerTrafficEncryption": false,
+    "EnableManagedSpotTraining": false,
+    "TrainingTimeInSeconds": 104,
+    "BillableTimeInSeconds": 104,
+    "ProfilingStatus": "Disabled",
+    "ResponseMetadata": {
+        "RequestId": "7c7f6646-e547-425c-99e0-d71c7f9716de",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "7c7f6646-e547-425c-99e0-d71c7f9716de",
+            "strict-transport-security": "max-age=47304000; includeSubDomains",
+            "x-frame-options": "DENY",
+            "content-security-policy": "frame-ancestors 'none'",
+            "cache-control": "no-cache, no-store, must-revalidate",
+            "x-content-type-options": "nosniff",
+            "content-type": "application/x-amz-json-1.1",
+            "content-length": "6673",
+            "date": "Sun, 14 Jun 2026 06:31:23 GMT"
+        },
+        "RetryAttempts": 0
+    }
+}
