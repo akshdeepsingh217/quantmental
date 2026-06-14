@@ -1,0 +1,51 @@
+{
+    "FeatureGroupName": "quantamental-risk-features-v2",
+    "CreationTime": "2026-05-23 18:12:03.387000+00:00",
+    "FeatureStoreStatus": "Created",
+    "FeatureDefinitions": [
+        {
+            "FeatureName": "RecordIdentifier",
+            "FeatureType": "String"
+        },
+        {
+            "FeatureName": "Ticker",
+            "FeatureType": "String"
+        },
+        {
+            "FeatureName": "EventTime",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "Close",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "Volume",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "Log_Return",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "EMA_5",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "EMA_20",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "Hist_Vol_5d",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "Target_Fwd_Vol_5d",
+            "FeatureType": "Fractional"
+        },
+        {
+            "FeatureName": "News_Sentiment_Score",
+            "FeatureType": "Fractional"
+        }
+    ]
+}
